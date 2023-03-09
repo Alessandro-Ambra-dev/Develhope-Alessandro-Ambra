@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8" />
+  <meta
+  name="viewport"
+  content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+  />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>HTML Lesson</title>
+ </head>
+ <body>
+  <main>
+    <h1>Oh no, it seems that you're not liking our projects, can you please tell us what's the issue?</h1>
+    <p>We are really sorry for not being in touch with your likings, tell us how we can improve:</p>
+  </main>
+  <section>
+  <form>
+    <textarea name="issues" id="" cols="30" rows="10" placeholder="Tell us your problems here..."></textarea>
+  </form>
+  <form>
+    <input type="submit" disabled>
+  </form>
+  </section>
+  <br>
+  <section>
+   <form>
+      <label for="rating">How much do you like us from 0 to 100?</label>
+      <input type="range" id="rating" min="0" max="100" step="20" value="0" list="rate">
+      <datalist id="rate">
+        <option value="0">
+        <option value="20">
+        <option value="40">
+        <option value="60">
+        <option value="80">
+        <option value="100">
+      </datalist>     
+   </form>
+  </section>
+  <section>
+  <br>
+    <form>
+      <label for="true">Are you sure you want to leave us?</label>
+      <input type="checkbox" id="true" checked>
+    </form>
+    <br>
+    <form>
+      <label for="submission_date">Set up the end date of your epic journey:</label>
+      <input type="datetime-local" id="submission_date">
+    </form>
+  </section>
+ </body>
+</html>
+            
