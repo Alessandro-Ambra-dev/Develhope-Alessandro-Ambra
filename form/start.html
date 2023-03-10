@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="eng">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>HTML Lesson</title>
+    <style>
+      label {
+        display: block;
+      }
+    </style>
+  </head>
+
+  <body>
+    <main>
+      <h1>Now that you've chosen us, we ask you to subscribe to our services</h1>
+      <!-- name, surname, birthdate and email of the user -->
+      <section>
+        <form>
+          <label for="user_name">Write here your name:</label>
+          <input type="text" id="user_name" name="user_name" placeholder="Mario">
+          <label for="user_lastname">Write here your last name:</label>
+          <input type="text"id="user_lastname" name="user_lastname" placeholder="Rossi">
+          <label for="user_birthday">Put here your date of birth:</label>
+          <input type="date" id="user_birthday" name="user_birthday">
+          <label for="user_email">Put here your personal email</label>
+          <input type="email" id="user_email" name="user_email" placeholder="your@bestmail.com">
+          <label for="user_password">Create a password:</label>
+          <input type="password" id="user_password" name="user_password">
+          <input type="submit">
+        </form>
+      </section>
+      <!-- telephone number-->
+      <section>
+        <h2>You're almost there, let's add some other information</h2>
+        <form>
+          <label for="user_number">Put here your telephone number:</label>
+          <input type="tel" id="user_number" name="user_number" placeholder="+31 123 45 67 890">
+        </form>
+      </section>
+      <!--plans -->
+      <section>
+        <h2>Choose a plan:</h2>
+        <form>
+          <label for="plans">Those are our plans:</label>
+          <select name="plans" id="plans">
+            <option value="free_plan">Free Plan</option>
+            <option value="weekly_vip">Weekly Vip = 9.99$</option>
+            <option value="montly_vip">Montly Vip= 29.99$</option>
+            <option value="one_year_vip">One year Vip= 99.99$</option>
+          </select>
+          <input type="submit">
+          <label for="pro_plan">Take it Pro Level:</label>
+          <input type="checkbox" id="pro_plan" name="pro_plan">
+          <input type="submit">
+        </form>
+      </section>
+      <!-- credit card info  -->
+      <section>
+        <h2>Now that you're here, we only need ypur card informations:</h2>
+        <form>
+          <label for="credit_card">Put the number of your credit card:</label>
+          <input type="text" id="credit_card" name="credit_card" placeholder="123 45 67 890 12">
+          <label for="cvc">Put the last 3 numbers of your card's CVC:</label>
+          <input type="password" id="cvc" name="cvc" placeholder="Example: 123">
+          <label for="expiration_date">Put here the expiration date:</label>
+          <input type="date" id="expiration_date" name="expiration_date">
+          <input type="submit">
+        </form>
+      </section>
+      <!-- billing address -->
+      <section>
+        <h2>That's it, now tell us where do you want your bill to be sended:</h2>
+        <form>
+          <label for="bill_address">Put here your bill address</label>
+          <input type="text" id="bill_address" name="bill_address" placeholder="Springfield Avenue, 2, Toronto (US)">
+          <input type="submit">
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
